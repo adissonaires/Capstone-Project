@@ -7,7 +7,7 @@ pipeline {
         stage("Code Checkout"){ 
         steps{
             git(
-                url: "https://github.com/amigo-nishant/Capstone_Project_Clone.git",
+                url: "https://github.com/adissonaires/Capstone-Project.git",
                 branch: "main",
                 credentialsId: "jenkins-secret",
                 changelog: true,
