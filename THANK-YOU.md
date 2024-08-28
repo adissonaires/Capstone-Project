@@ -12,7 +12,7 @@ https://www.docker.com
 
 **Kubernetes**
 
-Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications..
 
 https://kubernetes.io
 
