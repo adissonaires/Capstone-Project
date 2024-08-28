@@ -18,8 +18,12 @@ pipeline {
         stage("SonarQube Code Analysis") {
         steps {
             withSonarQubeEnv("Sonar") {
-                sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=airbyte -Dsonar.projectKey=airbyte -Dsonar.java.binaries=build/classes/java/main
- "
+                sh """
+                        $SONAR_HOME/bin/sonar-scanner \
+                        -Dsonar.projectName=airbyte \
+                        -Dsonar.projectKey=airbyte \
+                        -Dsonar.java.binaries=build/classes/java/main
+                    """
             }
         }
     }
