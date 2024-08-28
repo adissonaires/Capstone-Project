@@ -22,7 +22,7 @@ pipeline {
                         $SONAR_HOME/bin/sonar-scanner \
                         -Dsonar.projectName=airbyte \
                         -Dsonar.projectKey=airbyte \
-                        -Dsonar.java.binaries=target/classes
+                        -Dsonar.exclusions=**/*.java
                     """
             }
         }
